@@ -23,8 +23,15 @@ a{
     color: var(--dark);
     text-decoration: none;
 }
+.nav-text{
+    color:#fff !important;
+}
+.nav-bg{
+background-color: cyan !important;
+
+}
 .navbar .logo{
-    width: 160px;
+    width: 100px;
 }
 .navbar .nav-link {
     font-size: 18px;

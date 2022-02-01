@@ -77,3 +77,6 @@ section {
     box-shadow: none;
     transform: translateY(5px);
 }
+.footer{
+    margin-top: 50%;
+}

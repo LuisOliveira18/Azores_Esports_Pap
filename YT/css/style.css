@@ -44,7 +44,7 @@ background-color: cyan !important;
     border-radius: 0;
 }
 .hero {
-    background-image: url(../img/GamesBG.png);
+    background-image: url(../img/Background.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

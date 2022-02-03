@@ -80,3 +80,14 @@ section {
 .footer{
     margin-top: 50%;
 }
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: white;
+    font-size: 32px;
+    border-radius: 100px;
+}

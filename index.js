@@ -14,8 +14,17 @@ const db = mysql2.createConnection({
 app.use(express.static('./public'))
 
 app.get('/',(req,res)=> {
-  res.sendFile(path.join(__dirname, 'public/html/azpi.html'))
+  res.sendFile(path.join(__dirname, './public/html/azpi.html'))
 })
+
+app.get('/html/navbar',(req,res)=> {
+  res.sendFile(path.join(__dirname, './public/html/navbar.html'))
+})
+
+app.get('/html/footer',(req,res)=> {
+  res.sendFile(path.join(__dirname, './public/html/footer.html'))
+})
+
 const port = 3001
 
 app.listen(port, ()=>{

@@ -27,7 +27,7 @@ a{
     color:#fff !important;
 }
 .nav-bg{
-background-color: cyan !important;
+background-color: rgb(70, 134, 134) !important;
 
 }
 .navbar .logo{
@@ -89,6 +89,7 @@ section {
 }
 .footer{
     margin-top: 50%;
+    position: flex;
 }
 .iconbox {
     width: 54px;

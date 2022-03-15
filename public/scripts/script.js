@@ -26,3 +26,62 @@ function getFooter(){
         alert('Ocurreu um problema...')
     })
 }
+
+function enviarContactos(){
+    const pn = document.getElementById('contact-PrimNome').value
+    const email = document.getElementById('contact-Email').value
+    const telem= document.getElementById('contact-Telem').value
+    const msg = document.getElementById('contact-Mensagem').value
+  
+          if(telem.length >=10 && telem.lenght <9 ){
+            alert('insira um número válido')
+          }
+          else {
+            let i = 0
+            for(i; i<telem.length; i++){
+                let c = telem.charAt(i)
+                console.log(c)
+                if(isNaN(c)){
+                    alert('número inválido')
+                    break
+                }       
+            }
+            console.log(i)
+            if(i == telem.length){
+                const telemInt = parseInt(telem)
+                console.log(telemInt)
+            }
+            
+          }
+  
+  
+          if(pn == ''||email==''|| msg=='' || telem==''){
+                alert('Preencha todos os Campos!')
+          }else{
+    
+                  const data = {
+                    PrimNome: pn,
+                    Email: email,
+                    Telem: telem,
+                    Mensagem: msg
+                  }
+                  var d = JSON.stringify(data)
+                  console.log(d)
+                  var options = {
+                    method:'POST',
+                    headers: {
+                        'Content-type' : 'application/json'
+                    },
+                    body: d
+                  }
+                  fetch('http://localhost:3001/html/mascaras.html',options)
+                  .then(res => res.json())
+                  .then(data => alert(data.text))
+                  .catch((err) => {
+                    console.log('Pedido falhado', err.Mensagem)
+                  });
+  
+            }  
+    
+  }
+  

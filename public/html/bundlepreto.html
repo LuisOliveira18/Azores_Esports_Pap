@@ -10,6 +10,7 @@
     <script src="/scripts/script.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/info.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
     <title>AZORES ESPORTS</title>
 </head>
 
@@ -17,42 +18,34 @@
     <div id="nbar"></div>
     <section id="section">
         <div class="container">
-            <div class="col-12 mx-auto">
-                <div class="row">
-
-                    <h6><b>Bundle Preto</b></h6>
-                    <div class="container">
-                        <div class="card" style="width: 18rem;margin-right: 10px;">
-                            <img class="card-img-top" src="/img/Merch/AZBundle_1.png" alt="">
-                            <div class="service card-effect">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bundle Preto</h5>
-                                    <p class="card-text">Este bundle preto é imperdivel!!</p>
-                                    <p class="card-text">2 em 1 não há melhor combinação</p>
-                                    <p class="card-text">Preço: 24,99€</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-box">
-                            <div class="left">
-                            </div>
-                            <div class="right">
-                                <h2>Informa-nos as tuas medidas!</h2>
-                                <input type="text" class="field" placeholder="Nome Completo" id="contact-PrimNome">
-                                <input type="email" class="field" placeholder="Email" id="contact-email">
-                                <input type="number"  name="telemovel" class="field" placeholder="Quantidade" id="contact-telem">
-                                <textarea placeholder="Tamanho e morada: " id="contact-mensagem" class="field" required></textarea>
-                                <div class="inputBox" method="POST">
-                                    <button onclick="enviarContactos()" class="btn" type="submit" >Enviar Mensagem</button>
-                                 </div>
+            <div class="contact-box">
+                <div class="left">
+                    <div class="card" style="width: 18rem;margin-right: 10px;">
+                        <img class="card-img-top" src="/img/Merch/AZBundle_1.png" alt="">
+                        <div class="service card-effect">
+                            <div class="card-body">
+                                <h5 class="card-title">Bundle Preto</h5>
+                                <p class="card-text">Este bundle preto é imperdivel!!</p>
+                                <p class="card-text">2 em 1 não há melhor combinação</p>
+                                <p class="card-text">Preço: 24,99€</p>
                             </div>
                         </div>
                     </div>
-                         
-                    </div>
+                </div>
+                <div class="right">
+                    <h2>Contacte-nos</h2>
+                    <input type="text" class="field" placeholder="Nome Completo" id="contact-PrimNome">
+                    <input type="email" class="field" placeholder="Email" id="contact-email">
+                    <input type="number"  name="Quantidade" class="field" placeholder="Telemóvel" id="contact-telem">
+                    <textarea placeholder="Tamanho e morada:" id="contact-mensagem" class="field" required></textarea>
+                    <div class="inputBox" method="POST">
+                        <button onclick="enviarContactos()" class="btn" type="submit" >Enviar Mensagem</button>
+                     </div>
                 </div>
             </div>
         </div>
+        </div>
+    </div>
     </section>
     <div id="foot"></div>
     <style>

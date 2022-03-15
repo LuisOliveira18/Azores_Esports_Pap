@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path');
 const mysql2 = require('mysql2');
 const app = express()
+const connection = require('./dbconnection.js')
 
 /*
 const db = mysql2.createConnection({

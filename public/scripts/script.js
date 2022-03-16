@@ -27,11 +27,13 @@ function getFooter(){
     })
 }
 
+//script contactos
+
 function enviarContactos(){
     const pn = document.getElementById('contact-PrimNome').value
-    const email = document.getElementById('contact-Email').value
-    const telem= document.getElementById('contact-Telem').value
-    const msg = document.getElementById('contact-Mensagem').value
+    const email = document.getElementById('contact-email').value
+    const telem= document.getElementById('contact-telem').value
+    const msg = document.getElementById('contact-mensagem').value
   
           if(telem.length >=10 && telem.lenght <9 ){
             alert('insira um número válido')
@@ -74,7 +76,7 @@ function enviarContactos(){
                     },
                     body: d
                   }
-                  fetch('http://localhost:3001/html/mascaras.html',options)
+                  fetch('http://localhost:3001/contactos',options)
                   .then(res => res.json())
                   .then(data => alert(data.text))
                   .catch((err) => {
@@ -84,4 +86,3 @@ function enviarContactos(){
             }  
     
   }
-  

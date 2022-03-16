@@ -1,6 +1,6 @@
 const express = require('express')
 const enviarContactosRoute = express.Router()
-const connection = require('/dbconnection')
+const connection = require('../dbconnection')
 enviarContactosRoute.post('/', (req,res) => {
     console.log(req.body)
     connection.query(

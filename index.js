@@ -13,7 +13,7 @@ const db = mysql2.createConnection({
 })
 */
 app.use(express.static('./public'))
-
+app.use('/contactos',require('./routes/contactosRoutes'))  
 app.get('/',(req,res)=> {
   res.sendFile(path.join(__dirname, './public/html/azpi.html'))
 })
